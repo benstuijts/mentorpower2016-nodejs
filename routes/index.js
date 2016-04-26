@@ -52,6 +52,17 @@ router.get('/mentorschap-wat-is-het', function(req,res){
     });
 });
 
+router.get('/voorbeelden-van-mentorschap', function(req,res){
+    res.render('pages/examples', {
+        message: handleMessage(req),
+        title: "Voorbeelden van mentorschap",
+        description: "Lees hier concrete voorbeelden van mijn mentorschappen en laat je inspireren.",
+        keywords: "voorbeelden, voorbeelden mentorschap",
+        author: "Ben Stuijts",
+        breadcrumbs: [{url: "/", name: "home"}, {url: "/voorbeelden-van-mentorschap", name: "Voorbeelden van mentorschap"}],
+    });
+});
+
 router.get('/konnekt-buurtnetwerk', function(req,res){
     res.render('pages/konnekt-buurtnetwerk', {
         message: handleMessage(req),
@@ -59,7 +70,7 @@ router.get('/konnekt-buurtnetwerk', function(req,res){
         description: "Het opzetten en leiden van een stichting, die zich inzet om het sociale netwerk in een wijk of buurt te versterken.",
         keywords: "konnekt, konnekt buurtnetwerk",
         author: "Ben Stuijts",
-        breadcrumbs: [{url: "/", name: "home"}, {url: "/konnekt-buurtnetwerk", name: "Konnekt Buurtnetwerk"}],
+        breadcrumbs: [{url: "/", name: "home"}, {url: "/voorbeelden-van-mentorschap", name: "Voorbeelden van mentorschap"},{url: "/konnekt-buurtnetwerk", name: "Konnekt Buurtnetwerk"}],
     });
 });
 
@@ -70,7 +81,7 @@ router.get('/dominique-aarts', function(req,res){
         description: "Hoe maak je als jonge sporter jouw droom werkelijkheid.",
         keywords: "dominique aarts, hockey, nederlands elftal",
         author: "Ben Stuijts",
-        breadcrumbs: [{url: "/", name: "home"}, {url: "/dominique-aarts", name: "Ik wil in het Nederlands Elftal spelen"}],
+        breadcrumbs: [{url: "/", name: "home"}, {url: "/voorbeelden-van-mentorschap", name: "Voorbeelden van mentorschap"},{url: "/dominique-aarts", name: "Ik wil in het Nederlands Elftal spelen"}],
     });
 });
 
@@ -81,7 +92,7 @@ router.get('/suzan-de-jong', function(req,res){
         description: "Hoe ontwikkel ik mij razendsnel in een nieuwe omgeving en binnen een nieuw vakgebied?",
         keywords: "suzan de jong, stage, opleiding",
         author: "Ben Stuijts",
-        breadcrumbs: [{url: "/", name: "home"}, {url: "/suzan-de-jong", name: "Combinatie opleiding, stage en mentorschap"}],
+        breadcrumbs: [{url: "/", name: "home"}, {url: "/voorbeelden-van-mentorschap", name: "Voorbeelden van mentorschap"},{url: "/suzan-de-jong", name: "Combinatie opleiding, stage en mentorschap"}],
     });
 });
 
@@ -92,7 +103,7 @@ router.get('/carin-den-heijer', function(req,res){
         description: "Uitgedaagd worden om jouw dromen waar te maken.",
         keywords: "Carin den Heijer",
         author: "Ben Stuijts",
-        breadcrumbs: [{url: "/", name: "home"}, {url: "/carin-den-heijer", name: "Maak je dromen gewoon waar"}],
+        breadcrumbs: [{url: "/", name: "home"}, {url: "/voorbeelden-van-mentorschap", name: "Voorbeelden van mentorschap"},{url: "/carin-den-heijer", name: "Maak je dromen gewoon waar"}],
     });
 });
 

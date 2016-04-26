@@ -10,5 +10,9 @@ module.exports  = [
     {
         title: "Meer informatie",
         href: "/mentorschap-wat-is-het"
+    },
+    {
+        title: "Voorbeelden",
+        href: "/voorbeelden-van-mentorschap"
     }
 ];
