@@ -21,7 +21,7 @@ module.exports = [
     
     {
         naam: "Thérèse van Wassenaar",
-        pasfoto: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAJQAAAAJGE1OWQ2NzRkLWQ3ZjUtNDE4NC04MzcyLTllYzBhYzk0Y2ZiOA.jpg",
+        pasfoto: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAjtAAAAJGNmMjBkYjgzLWU2YmYtNGUzMS05NzAzLWYzMWQ0YWU3NjMxMA.jpg",
         header: "Burgerinitiatief: Het opzetten van een eigen stichting + leiding geven.",
         introductie: "Al jaren heb ik de drang om iets voor de samenleving te betekenen en dan in het bijzonder voor mijn directe omgeving, de woonbuurten in Spijkenisse Zuidwest. Ik merk dat verschillende mensen in de wijk het zwaar hebben: Men moet onder andere rond komen met een smalle portemonnee, er is eenzaamheid en psychische problemen komen voor. Mijn visie is dat een sociaal netwerk een positieve bijdrage kan leveren aan een betere woonwijk. Mensen komen meer onder elkaar, helpen en ondersteunen elkaar en kunnen elkaar de juiste weg wijzen. Niet iedereen is zelf in staat om te netwerken of mist de aanknopingspunten om mee te doen. Daarom zouden activiteiten, en het vinden van een manier om vraag een aanbod binnen de wijk met elkaar te matchen, kunnen helpen om deze drempel te verlagen.",
         slug: "konnekt-buurtnetwerk",

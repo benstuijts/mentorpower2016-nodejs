@@ -2,7 +2,7 @@ module.exports = {
     development: {
         name: "Mentorpower",
         author: "Ben Stuijts",
-        baseUrl: "https://mp2016mei-stuijts.c9users.io/",
+        baseUrl: "https://mentorpower2016-nodejs-stuijts.c9users.io/",
         tagline: "De kunst van het vragen stellen en antwoorden geven.",
         contact: {
             email: "benstuijts@mentorpower.nl",
