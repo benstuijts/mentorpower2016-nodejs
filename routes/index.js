@@ -41,6 +41,17 @@ router.get('/benstuijts', function(req,res){
     });
 });
 
+router.get('/mentorschap-wat-is-het', function(req,res){
+    res.render('pages/mentorschap', {
+        message: handleMessage(req),
+        title: "Wat is een mentorschap?",
+        description: "Op welke wijze zou een mentorschap mij kunnen helpen?",
+        keywords: "mentorschap",
+        author: "Ben Stuijts",
+        breadcrumbs: [{url: "/", name: "home"}, {url: "/mentorschap-wat-is-het", name: "Op welke wijze zou een mentorschap mij kunnen helpen?"}],
+    });
+});
+
 router.get('*', function(req, res){
     res.render('pages/404', {
         title: "Pagina niet gevonden",
