@@ -1,0 +1,55 @@
+<div id="concrete-voorbeelden"></div>
+<div class="row subject">
+    <div class="container">
+        <h1 class="subject-title">Concrete voorbeelden van een mentorschap</h1>
+        <h2 class="subject-subtitle"></h2>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <p>
+        Ik geloof dat verhalen 100 keer meer vertellen dan theoretische modellen. Daarom vraag ik altijd aan de mensen, waarvoor ik mentor mag zijn, of ik hun verhaal zou mogen gebruiken om anderen te inspireren.
+
+        Mentorschap is niet alleen iets voor het individu. Sterker nog, vaak helpt het om met elkaar ergens aan te werken, ieder vanuit zijn eigen betrokkenheid.
+        </p>
+        
+        <hr>
+    </div>
+     <% function shuffle(r){for(var f,n,o=r.length;0!==o;)n=Math.floor(Math.random()*o),o-=1,f=r[o],r[o]=r[n],r[n]=f;return r} %>
+   
+    <% 
+        shuffle(voorbeelden);
+        voorbeelden.forEach(function(voorbeeld) { %>
+        <div class="row">
+            <div class="col-md-2">
+                <h3 class="visible-xs visible-sm">
+                    <img class="img-thumbnail" width="64" src="<%= voorbeeld.pasfoto %>" alt="<%= voorbeeld.naam %>">
+                    <%= voorbeeld.naam %>
+                </h3>
+                <img class="media-object img-circle visible-md visible-lg" width="128" src="<%= voorbeeld.pasfoto %>" alt="<%= voorbeeld.naam %>">
+            </div>
+            
+            <div class="col-md-9 ">
+                <h4 class="media-heading"><%= voorbeeld.header %></h4>
+                <p>
+                    <%= voorbeeld.introductie %>
+                </p>
+                <a href="<%= baseUrl %><%= voorbeeld.slug %>" class="btn btn-mentorpower-blue">
+                    <i class="fa fa-mouse-pointer faa-pulse animated"></i>
+                    Lees verder...
+                </a>
+                </div>
+        </div>
+        <hr>
+        
+        
+    <% }); %>
+    
+    
+    
+<a href="#top-of-the-page"><i class="fa fa-arrow-up" aria-hidden="true"></i> naar boven</a> <a href="#first-article"><i class="fa fa-arrow-up" aria-hidden="true"></i> introductie</a>
+    
+</div>
+
+
