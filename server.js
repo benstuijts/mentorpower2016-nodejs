@@ -9,6 +9,7 @@ const mode = process.argv[2].split(":")[1];
 const config = require('./config/config')[mode];
 const port = process.env.port || 8080;
 const voorbeelden = require('./data/voorbeelden');
+const navigation = require('./config/navigation')
 
 /* Configuration App */
 app.set('view engine', 'ejs');
@@ -33,6 +34,7 @@ app.use('/', function(req, res, next){
     app.locals['voorbeelden'] = voorbeelden;
     app.locals['url'] = u;
     res.locals['urlFor'] = function(url) { return '/' + url; };
+    res.locals['navigation'] = navigation;
     next();
 });
 
