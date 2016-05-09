@@ -5,9 +5,9 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const url         = require('url');
 
-const mode = process.argv[2].split(":")[1];
+const mode = process.argv[2].split(":")[1] || 'production';
 const config = require('./config/config')[mode];
-const port = process.env.port || 8080;
+const port = process.env.port || 3000;
 const voorbeelden = require('./data/voorbeelden');
 const navigation = require('./config/navigation')
 

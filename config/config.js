@@ -58,7 +58,7 @@ module.exports = {
     production: {
         name: "Mentorpower",
         author: "Ben Stuijts",
-        baseUrl: "http://mentorpower/",
+        baseUrl: "http://mentorpower.nl/",
         tagline: "De kunst van het vragen stellen en antwoorden geven.",
         contact: {
             email: "benstuijts@mentorpower.nl",
