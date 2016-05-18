@@ -4,8 +4,13 @@ const app       = express();
 const session = require('express-session');
 const flash = require('connect-flash');
 const url         = require('url');
+let mode;
+try {
+    mode = process.argv[2].split(":")[1] || 'production';
+} catch(error) {
+    mode = 'development';
+}
 
-const mode = process.argv[2].split(":")[1] || 'production';
 const config = require('./config/config')[mode];
 const port = process.env.port || 3000;
 const voorbeelden = require('./data/voorbeelden');
