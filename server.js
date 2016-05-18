@@ -40,6 +40,7 @@ app.use('/', function(req, res, next){
     app.locals['url'] = u;
     res.locals['urlFor'] = function(url) { return '/' + url; };
     res.locals['navigation'] = navigation;
+    res.locals['baseUrl'] = "http://mentorpower.nl/";
     next();
 });
 
